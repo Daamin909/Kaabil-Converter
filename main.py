@@ -7,7 +7,7 @@ def convert_currency(amount, from_currency, to_currency):
     url = f"https://api.freecurrencyapi.com/v1/latest?apikey=fca_live_ZuGAAxXLvgIDdbeAWacrOONoWbvAKbtEh0JhSDZU&currencies={from_currency}%2C{to_currency}%2CUSD"
     response = requests.get(url)
     data = response.json()
-    print(data)
+    print("ho")
     base_rate = data['data']['USD']/data['data'][from_currency]
     converted_amount = base_rate * amount * data['data'][to_currency]
     return converted_amount

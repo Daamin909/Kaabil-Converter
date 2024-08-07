@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="assets/css/style.css">    
     </head>
     <body>
-        <form action="http://localhost:8000" method="POST">
+        <form action="http://localhost:5000/send" method="GET">
             <select name="fromCurrency" id="fromCurrency">
                 <option value="">From Currency:</option>
                 <option value="AUD">Australian Dollar</option>
@@ -44,7 +44,7 @@
             </select>
             <input type="number" name="amount" placeholder="Amount">
             <select name="toCurrency" id="toCurrency">
-                <option value="">From Currency:</option>
+                <option value="">To Currency:</option>
                 <option value="AUD">Australian Dollar</option>
                 <option value="BGN">Bulgarian Lev</option>
                 <option value="BRL">Brazillian Real</option>
