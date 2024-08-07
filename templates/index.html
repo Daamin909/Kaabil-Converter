@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="assets/css/style.css">    
     </head>
     <body>
-        <form action="http://localhost:8000" method="GET">
+        <form action="http://127.0.0.1:8000/convert" method="POST">
             <select name="fromCurrency" id="fromCurrency">
                 <option value="">From Currency:</option>
                 <option value="AUD">Australian Dollar</option>
@@ -81,5 +81,6 @@
             </select>
             <input type="submit" name="send">
         </form>
+        {{output}}
     </body>
 </html>
