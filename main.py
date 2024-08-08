@@ -20,7 +20,11 @@ def convert():
     amount = request.form.get('amount')
     from_currency = request.form.get('fromCurrency')
     to_currency = request.form.get('toCurrency')
-    return render_template('index.html',output=f'{amount} {from_currency.upper()} = {round(convert_currency(float(amount), from_currency.upper(), to_currency.upper()), 4)} {to_currency}')
+    try:
+        output = round(convert_currency(float(amount), from_currency.upper(), to_currency.upper()), 4)
+    except (ValueError, KeyError):
+        return render_template('index.html',output='Invalid Input')
+    return render_template('index.html',output=f'{amount} {from_currency.upper()} = {output} {to_currency.upper()}')
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1',port='8000',debug=True)
