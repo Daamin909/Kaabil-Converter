@@ -1,0 +1,75 @@
+body, h1, form, select, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    background-color: rgba(15, 76, 117, 0.8); 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+h1 {
+    margin-bottom: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+select, input[type="number"], input[type="submit"] {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(50, 130, 184, 0.8); 
+    color: white;
+    font-size: 16px;
+}
+input[type="submit"] {
+    cursor: pointer;
+    background-color: #1b262c;
+}
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 12px);
+    background-position-y: center;
+    padding-right: 32px;
+}
+select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #66afe9;
+}
+input::placeholder {
+    color: #ffffff; 
+    opacity: 0.8; 
+}
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+}

@@ -1,10 +1,18 @@
-<html>
-    <head>
-        <title>Kaabil Converter</title>
-        <script src="assets/script/script.js"></script>
-        <link rel="stylesheet" href="assets/css/style.css">    
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaabil Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="../static/css/style.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>Kaabil Converter</h1>
         <form action="http://127.0.0.1:8000/convert" method="POST">
             <select name="fromCurrency" id="fromCurrency">
                 <option value="">From Currency:</option>
@@ -79,8 +87,9 @@
                 <option value="USD">United States Dollar</option>
                 <option value="ZAR">South African Rand</option>
             </select>
-            <input type="submit" name="send">
+            <input type="submit" name="send" value="Convert">
         </form>
         {{output}}
-    </body>
+    </div>
+</body>
 </html>
