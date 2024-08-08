@@ -19,9 +19,6 @@
     },
     "win": {
       "icon": "../static/images/android-chrome-512x512.ico"
-    },
-    "linux": {
-      "icon": "../static/images/favicon-32x32.png"
     }
   },
   "keywords": [],
