@@ -1,5 +1,5 @@
 {
-  "name": "Kaabil Converter",
+  "name": "kaabil_converter",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -9,13 +9,19 @@
     "dist": "electron-builder"
   },
   "build": {
-    "appId": "com.example.Kaabil_Converter",
+    "appId": "com.example.app",
     "productName": "Kaabil Converter",
     "files": [
       "**/*"
     ],
     "directories": {
       "output": "app"
+    },
+    "win": {
+      "icon": "../static/images/android-chrome-512x512.ico"
+    },
+    "linux": {
+      "icon": "../static/images/favicon-32x32.png"
     }
   },
   "keywords": [],
