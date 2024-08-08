@@ -4,7 +4,7 @@ body, h1, form, select, input {
     box-sizing: border-box;
 }
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     background-image: url('../images/background.jpg');
     background-size: cover;
     background-position: center;
@@ -19,11 +19,13 @@ body {
 .container {
     background-color: rgba(15, 76, 117, 0.8); 
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 35px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     width: 90%;
     max-width: 500px;
     text-align: center;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
 }
 h1 {
     margin-bottom: 20px;
@@ -36,7 +38,7 @@ select, input[type="number"], input[type="submit"] {
     padding: 12px;
     margin-bottom: 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     background-color: rgba(50, 130, 184, 0.8); 
     color: white;
     font-size: 16px;
@@ -44,6 +46,7 @@ select, input[type="number"], input[type="submit"] {
 input[type="submit"] {
     cursor: pointer;
     background-color: #1b262c;
+    border-radius: 20px;
 }
 select {
     appearance: none;
